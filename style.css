@@ -1,0 +1,85 @@
+body {
+    background-image: url('фон.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.social-links {
+          display: flex;
+          justify-content: center;
+          margin-top: 1px;
+          padding: 5px;
+          border-radius: 20px;
+          margin-bottom: 4rem;
+
+    }
+
+.social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #dbdbdb;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+
+.social-links a:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+
+#wheel-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+#wheel {
+        width: 70%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+#wheel img {
+        width: 100%;
+        height: auto;
+        image-rendering: optimizeQuality;
+      }
+
+#spin-button {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+        max-width: 30px;
+        z-index: 1;
+        background-image: url("приз.png"); /* путь к изображению кнопки */
+        background-size: contain; /* устанавливаем размер изображения внутри кнопки */
+        background-repeat: no-repeat; /* запрещаем повторять изображение */
+        text-indent: -9999px; /* скрываем текст кнопки за ее пределами */
+        border: none; /* убираем обводку */
+        background-color: transparent; /* убираем фон */
+        cursor: pointer;
+      }
+
+#spin-button img{
+        width: 100%;
+        height: auto;
+        image-rendering: optimizeQuality;
+      }
+
+
+/*
+      @media screen and (max-width: 768px) {
+        #wheel {
+          width: 100%;
+        }
+        #spin-button{
+            padding: 8%;
+        }
+      }
