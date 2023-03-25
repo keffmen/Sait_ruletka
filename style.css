@@ -9,7 +9,7 @@ body {
 .social-links {
           display: flex;
           justify-content: center;
-          margin-top: 1px;
+          margin-top: 50px;
           padding: 5px;
           border-radius: 20px;
           margin-bottom: 10rem;
@@ -18,11 +18,11 @@ body {
 
 .social-links a {
       display: inline-block;
-      margin: 0 10px;
-      padding: 10px 20px;
+      margin: 0 20px;
+      padding: 20px 30px;
       background-color: #dbdbdb;
       color: #000;
-      font-size: 50px;
+      font-size: 70px;
       font-weight: bold;
       text-decoration: none;
       border-radius: 20px;
