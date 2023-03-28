@@ -21,7 +21,9 @@ function spinWheel() {
   const totalRotation = currentRotation + spinAngle;
   const tl = gsap.timeline({
     onComplete: () => {
-
+        document.querySelector('.Block_prize').style.display = 'flex';
+        var text_prize = document.getElementById('prize')
+        text_prize.innerHTML = 'Вы выйграли!<br>Но что бы забрать приз прейдите в WHATSAPP';
     },
   });
   tl.to(wheel, {

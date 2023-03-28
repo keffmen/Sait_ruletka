@@ -6,6 +6,57 @@ body {
     min-height: 100vh;
 }
 
+.Block_prize{
+    text-decoration: none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: green;
+  animation: beat 1s infinite;
+}
+
+
+.whatsapp-icon i {
+  font-size: 70px;
+  color: white;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Prize_Text {
+    width: 600px;
+    color: #111;
+    font-family: ‘Open Sans Condensed’, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 0 0;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffffff9f;
+    border-radius: 36px;
+}
+
+
 .social-links {
           display: flex;
           justify-content: center;
