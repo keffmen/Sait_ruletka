@@ -17,13 +17,13 @@ let currentRotation = 0;
 function spinWheel() {
   if (spinning) return;
   spinning = true;
-  const spinAngle = 360 * 4 + 120;
+  const spinAngle = 360 * 5 + Math.floor(Math.random() * 360);
   const totalRotation = currentRotation + spinAngle;
   const tl = gsap.timeline({
     onComplete: () => {
         document.querySelector('.Block_prize').style.display = 'flex';
         var text_prize = document.getElementById('prize')
-        text_prize.innerHTML = 'Вы выйграли!<br>Но что бы забрать приз прейдите в WHATSAPP';
+        text_prize.innerHTML = 'Вы выиграли! <br>Что бы получить приз, сделайте скрин и отправьте его в WhatsApp';
     },
   });
   tl.to(wheel, {

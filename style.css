@@ -22,6 +22,7 @@ body {
   border-radius: 50%;
   background-color: green;
   animation: beat 1s infinite;
+  margin: 0 0 0 20px;
 }
 
 
@@ -95,6 +96,7 @@ body {
         width: 70%;
         max-width: 800px;
         margin: 0 auto;
+        padding: 25px;
       }
 
 #wheel img {
@@ -108,7 +110,7 @@ body {
         transform: translate(-50%, -50%);
         width: 15%;
         height: auto;
-        max-width: 150px;
+        max-width: 100px;
         z-index: 1;
         background-image: url("приз.png"); /* путь к изображению кнопки */
         background-size: contain; /* устанавливаем размер изображения внутри кнопки */
@@ -122,15 +124,4 @@ body {
 #spin-button img{
         width: 100%;
         height: auto;
-      }
-
-
-/*
-      @media screen and (max-width: 768px) {
-        #wheel {
-          width: 100%;
-        }
-        #spin-button{
-            padding: 8%;
-        }
       }
